@@ -1,0 +1,21 @@
+{
+  "name": "screen-reader",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && yarn run copy-popup",
+    "preview": "vite preview",
+    "copy-popup": "cp src/popup.html dist/popup.html"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "@types/chrome": "^0.0.271",
+    "@types/jest": "^29.5.13",
+    "ts-jest": "^29.2.5"
+  }
+}
